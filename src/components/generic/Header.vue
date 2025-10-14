@@ -1,6 +1,6 @@
 <!--
     Header.vue
-    A combined header and optional subheader for panel sections.
+    A combined header with a title and an optional subtitle for panel sections.
 -->
 
 <script setup lang="ts">
@@ -16,13 +16,13 @@ defineProps<Props>()
 
 <template>
     <div class="mb-6">
-        <!-- Main header -->
+        <!-- Main title-->
         <h2 class="text-3xl sm:text-4xl text-balance
             text-ctp-text font-semibold tracking-tight">
             {{ title }}
         </h2>
 
-        <!-- Sub-header -->
+        <!-- Subtitle -->
         <p v-if="subtitle" class="text-base text-ctp-subtext1 mt-2">
             <i>{{ subtitle }}</i>
         </p>

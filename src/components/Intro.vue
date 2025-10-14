@@ -38,7 +38,7 @@ import Text from './generic/Text.vue'
             </div>
 
             <!-- Self-portrait -->
-            <img src="../assets/images/portrait.jpg" alt="Self-Portrait" width="2432" height="1442" class="relative -z-20
+            <img src="../assets/images/portrait.webp" alt="Self-Portrait" width="2432" height="1442" class="relative -z-20
                 w-full lg:w-full lg:max-w-full
                 rounded-xl shadow-xl 
                 ring-1 ring-white/10 

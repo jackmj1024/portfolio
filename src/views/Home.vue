@@ -21,5 +21,6 @@ document.documentElement.className = "macchiato";
         max-w-6xl mx-auto">
         <Intro />
         <Skills />
+        <Projects />
     </div>
 </template>
