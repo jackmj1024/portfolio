@@ -5,7 +5,7 @@
 -->
 
 <template>
-    <main>
+    <main class="bg-ctp-base">
         <RouterView />
     </main>
 </template>

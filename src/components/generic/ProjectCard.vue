@@ -27,7 +27,7 @@ defineProps<Props>()
         relative overflow-hidden
         bg-ctp-base rounded-lg 
         border border-ctp-surface2 hover:border-ctp-lavender
-        transition-all duration-300">
+        transition-all duration-200">
 
 
         <!-- Thumbnail -->
@@ -51,7 +51,7 @@ defineProps<Props>()
             </div>
 
             <!-- Link Button -->
-            <button class="inline-flex items-center
+            <button class="inline-flex items-center cursor-pointer
                 gap-2 px-4 py-2 rounded-md 
                 font-medium text-sm text-ctp-base
                 bg-ctp-lavender hover:bg-ctp-blue transition-colors duration-200">
