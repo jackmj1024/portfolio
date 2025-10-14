@@ -6,8 +6,10 @@
 <script setup lang="ts">
 
 import Subheader from './Subheader.vue';
+import LinkButton from './LinkButton.vue';
 
 interface Project {
+    id: string
     title: string
     description: string
     image: string
@@ -51,15 +53,14 @@ defineProps<Props>()
             </div>
 
             <!-- Link Button -->
-            <button class="inline-flex items-center cursor-pointer
-                gap-2 px-4 py-2 rounded-md 
-                font-medium text-sm text-ctp-base
-                bg-ctp-lavender hover:bg-ctp-blue transition-colors duration-200">
+            <LinkButton :path=project.id>
                 More Information
+
+                <!-- Display an arrow icon next to the label text. -->
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-            </button>
+            </LinkButton>
         </div>
     </div>
 </template>

@@ -4,8 +4,17 @@
     The pages themselves are stored in ./views/
 -->
 
+
+<script setup lang="ts">
+
+// Ignore user light/dark preference and always use Catppuccin Macchiato color palette.
+localStorage.setItem("theme", "macchiato");
+document.documentElement.className = "macchiato";
+
+</script>
+
 <template>
-    <main class="bg-ctp-base">
+    <main class="bg-ctp-base font-[Overpass]">
         <RouterView />
     </main>
 </template>
