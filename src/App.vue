@@ -4,7 +4,6 @@
     The pages themselves are stored in ./views/
 -->
 
-
 <script setup lang="ts">
 
 // Ignore user light/dark preference and always use Catppuccin Macchiato color palette.

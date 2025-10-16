@@ -26,7 +26,7 @@ import LinkButton from '../components/generic/LinkButton.vue';
 
         <div class="mt-10 flex items-center justify-center gap-x-6">
             <LinkButton to="/">
-                Back to Homepage
+                Back to Home
             </LinkButton>
         </div>
     </div>

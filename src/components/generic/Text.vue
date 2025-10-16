@@ -4,7 +4,7 @@
 -->
 
 <template>
-    <p class="mt-4 text-ctp-text">
+    <p class="mb-2 text-ctp-text">
         <slot />
     </p>
 </template

@@ -7,9 +7,9 @@
 
 interface Props {
     path: string
-}
+};
 
-defineProps<Props>()
+defineProps<Props>();
 
 </script>
 

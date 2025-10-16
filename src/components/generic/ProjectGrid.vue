@@ -5,24 +5,17 @@
 
 <script setup lang="ts">
 
-import ProjectCard from './ProjectCard.vue'
-
-interface Project {
-    id: string
-    title: string
-    description: string
-    image: string
-    tags: string[]
-}
+import ProjectCard from './ProjectCard.vue';
 
 interface Props {
     projects: Project[]
     columns?: 1 | 2 | 3
-}
+};
 
 withDefaults(defineProps<Props>(), {
     columns: 2
-})
+});
+
 </script>
 
 <template>

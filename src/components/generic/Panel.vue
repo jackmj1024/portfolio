@@ -4,7 +4,7 @@
 -->
 
 <template>
-    <div class="relative isolate overflow-hidden
+    <div class="relative isolate overflow-hidden mb-8
     bg-ctp-mantle
     border border-ctp-surface0 hover:border-ctp-surface1 transition-colors duration-200
     px-8 py-8

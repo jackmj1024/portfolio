@@ -7,20 +7,13 @@
 
 import Subheader from './Subheader.vue';
 import LinkButton from './LinkButton.vue';
-
-interface Project {
-    id: string
-    title: string
-    description: string
-    image: string
-    tags: string[]
-}
+import TagDisplay from './TagDisplay.vue';
 
 interface Props {
     project: Project
-}
+};
 
-defineProps<Props>()
+defineProps<Props>();
 
 </script>
 
@@ -40,26 +33,16 @@ defineProps<Props>()
 
         <!-- Content -->
         <div class="p-6">
+
             <!-- Header -->
-            <Subheader :title=project.title :subtitle=project.description />
+            <Subheader :title=project.title :subtitle=project.description class="mb-3" />
 
             <!-- Tags -->
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span v-for="tag in project.tags" :key="tag" class="px-2 py-1
-                    text-xs font-medium text-ctp-subtext1 
-                    bg-ctp-surface0 rounded">
-                    {{ tag }}
-                </span>
-            </div>
+            <TagDisplay :tags="project.tags" />
 
             <!-- Link Button -->
             <LinkButton :path=project.id>
                 More Information
-
-                <!-- Display an arrow icon next to the label text. -->
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
             </LinkButton>
         </div>
     </div>

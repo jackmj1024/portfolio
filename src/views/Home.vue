@@ -5,16 +5,16 @@
 
 <script setup lang="ts">
 
-import Intro from '../components/Intro.vue';
-import Skills from '../components/Skills.vue';
-import Projects from '../components/Projects.vue';
+import IntroSection from '../components/IntroSection.vue';
+import SkillSection from '../components/SkillSection.vue';
+import ProjectSection from '../components/ProjectSection.vue';
 
 </script>
 
 <template>
     <div class="px-8 py-8 space-y-4 max-w-6xl mx-auto">
-        <Intro />
-        <Skills />
-        <Projects />
+        <IntroSection />
+        <SkillSection />
+        <ProjectSection />
     </div>
 </template>

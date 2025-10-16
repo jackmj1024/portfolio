@@ -8,14 +8,14 @@
 interface Props {
     title: string
     subtitle?: string
-}
+};
 
-defineProps<Props>()
+defineProps<Props>();
 
 </script>
 
 <template>
-    <div class="mb-6">
+    <div class="mb-4">
         <!-- Main title-->
         <h2 class="text-3xl sm:text-4xl text-balance
             text-ctp-text font-semibold tracking-tight">
@@ -23,7 +23,7 @@ defineProps<Props>()
         </h2>
 
         <!-- Subtitle -->
-        <p v-if="subtitle" class="text-base text-ctp-subtext1 mt-2">
+        <p v-if="subtitle" class="text-base text-ctp-subtext1 mt-1">
             <i>{{ subtitle }}</i>
         </p>
     </div>
