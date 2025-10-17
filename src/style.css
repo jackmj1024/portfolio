@@ -1,9 +1,18 @@
 @import "tailwindcss";
 @import "@catppuccin/tailwindcss/macchiato.css";
 
+/* Define Overpass font for use in App.vue. */
 @font-face {
   font-family: 'Overpass';
   src:url('./assets/fonts/overpass.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+/* Set background on html and body to prevent overscroll color flash. */
+html,
+body {
+  background-color: theme('colors.ctp-base');
+  margin: 0;
+  padding: 0;
 }

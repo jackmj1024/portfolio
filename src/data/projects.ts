@@ -35,7 +35,7 @@ export const projects: Record<string, Project> = {
     },
     nasa: {
         id: 'nasa',
-        title: 'NASA App Development Challenge (2019)',
+        title: 'NASA App Development Challenge',
         description: 'An application I made in high school for a nation-wide competition hosted by NASA which my team ended up winning.',
         image: new URL('../assets/images/rcdx0.png', import.meta.url).href,
         tags: ['3D', 'Unity Engine', 'C#', 'Python', 'UDP Networking'],

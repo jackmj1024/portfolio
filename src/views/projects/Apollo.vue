@@ -27,17 +27,17 @@ const images: ImageItem = [
     {
         src: new URL('../../assets/images/apollo2.png', import.meta.url).href,
         alt: "Screenshot: discussion window",
-        description: "A discussion system where students and professors can leave comments and notes on specific timestamps of a video:"
+        description: "A discussion system where students and professors can leave comments on specific timestamps of a video:"
     },
     {
         src: new URL('../../assets/images/apollo3.png', import.meta.url).href,
         alt: "Screenshot: course page",
-        description: "A course-group system where professors can invite students to view course information, assigned videos, and due dates:"
+        description: "A course-group system where professors can invite students to view assigned videos and due dates:"
     },
     {
         src: new URL('../../assets/images/apollo1.png', import.meta.url).href,
         alt: "Screenshot: video player",
-        description: "A viewing page where students and professors can watch external videos with an auto-scrolling transcript on the sidebar:"
+        description: "A viewing page where students and professors can watch external videos with an auto-scrolling transcript:"
     },
 ];
 
@@ -75,6 +75,23 @@ const project: Project = projects.apollo;
         <section>
             <Subheader title="Key Features" />
             <ImageGrid :images="images" :columns="2" />
+        </section>
+
+        <!-- Development-->
+        <section>
+            <Subheader title="Development" />
+            <TagDisplay :tags=project.tags />
+            <Text>
+                The project was composed of a frontend, a backend, and a MongoDB database. The frontend was written in
+                JavaScript using the React framework and the Material UI component library. while the backend was
+                written in Java using the Spring Boot framework.
+            </Text>
+
+            <Text>
+                During this project, I worked on both the frontend and the backend. In addition to making significant
+                contributions to the discussion system and the courses page, I also implemented a login/sessions system
+                through Google's Single-Sign On interface.
+            </Text>
         </section>
 
         <!-- Takeaways -->

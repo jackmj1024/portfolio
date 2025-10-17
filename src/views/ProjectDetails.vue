@@ -20,7 +20,7 @@ defineProps<Props>()
 </script>
 
 <template>
-    <div class="bg-ctp-base px-6 py-6 max-w-6xl mx-auto space-y-8">
+    <div class="px-6 py-6 max-w-6xl mx-auto space-y-8">
         <Panel>
             <!-- Header -->
             <Header :title="project.title" :subtitle="project.description" />

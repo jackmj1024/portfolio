@@ -13,7 +13,7 @@ document.documentElement.className = "macchiato";
 </script>
 
 <template>
-    <main class="bg-ctp-base font-[Overpass]">
+    <main class="min-h-screen bg-ctp-base font-[Overpass]">
         <RouterView />
     </main>
 </template>

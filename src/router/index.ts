@@ -9,12 +9,23 @@ import NotFound from '../views/NotFound.vue';
 import Apollo from '../views/projects/Apollo.vue';
 
 const routes = [
-    { path: '/', component: Home },
-    { path: '/apollo', component: Apollo },
-    { path: '/:catchAll(.*)*', component: NotFound },
+    { path: '/', name: 'home', component: Home },
+    { path: '/apollo', name: 'apollo', component: Apollo },
+    { path: '/:catchAll(.*)*', name: '404', component: NotFound },
 ];
 
 export const router = createRouter({
     history: createWebHistory(),
     routes,
+    scrollBehavior(to, from) {
+        if (to.name === "home" && from.name && from.name !== '404') {
+            return {
+                el: '#projects',
+                behavior: 'smooth',
+                top: 32
+            }
+        }
+
+        return { top: 0 }
+    }
 });

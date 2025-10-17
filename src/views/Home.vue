@@ -15,6 +15,8 @@ import ProjectSection from '../components/ProjectSection.vue';
     <div class="px-8 py-8 space-y-4 max-w-6xl mx-auto">
         <IntroSection />
         <SkillSection />
-        <ProjectSection />
+        <div id="projects">
+            <ProjectSection />
+        </div>
     </div>
 </template>
