@@ -8,8 +8,10 @@
 import Panel from '../components/generic/Panel.vue';
 import Header from '../components/generic/Header.vue';
 import Image from '../components/generic/Image.vue';
-import LinkButton from '../components/generic/LinkButton.vue';
 import TagDisplay from '../components/generic/TagDisplay.vue';
+
+import RouterButton from '../components/generic/RouterButton.vue';
+import GitHubButton from '../components/generic/GitHubButton.vue';
 
 interface Props {
     project: Project
@@ -26,11 +28,11 @@ defineProps<Props>()
             <Header :title="project.title" :subtitle="project.description" />
 
             <!-- Tags -->
-            <TagDisplay :tags=project.tags />
+            <TagDisplay :tags="project.tags" />
 
             <!-- Header image -->
-            <div v-if=project.image>
-                <Image :src=project.image :alt=project.title />
+            <div v-if="project.image">
+                <Image :src="project.image" :alt="project.title" />
             </div>
 
             <!-- Main content slot -->
@@ -38,11 +40,16 @@ defineProps<Props>()
                 <slot />
             </div>
 
-            <!-- Back button -->
-            <div class="mt-6 pt-6 border-t border-ctp-surface0">
-                <LinkButton path="/">
+            <div class="mt-6 pt-6 border-t border-ctp-surface0 space-y-2 space-x-2">
+                <!-- Back button -->
+                <RouterButton path="/">
                     Back to Home
-                </LinkButton>
+                </RouterButton>
+
+                <!-- GitHub button -->
+                <GitHubButton v-if="project.githubLink" :path="project.githubLink">
+                    View on GitHub
+                </GitHubButton>
             </div>
         </Panel>
     </div>

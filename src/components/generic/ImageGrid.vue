@@ -35,9 +35,7 @@ withDefaults(defineProps<Props>(), {
             images.length % 2 !== 0 && index === images.length - 1 ? 'md:col-span-2' : '']">
 
             <!-- Description above image -->
-            <Text v-if="image.description">
-                {{ image.description }}
-            </Text>
+            <Text v-if="image.description" v-html="image.description" />
 
             <!-- Image -->
             <img :src="image.src" :alt="image.alt" class="w-full rounded-lg" />

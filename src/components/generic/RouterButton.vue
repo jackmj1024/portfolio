@@ -1,5 +1,5 @@
 <!--
-    LinkButton.vue
+    RouterButton.vue
     Customizable button component that redirects to another page using Vue Router.
 -->
 

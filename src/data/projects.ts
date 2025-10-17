@@ -9,6 +9,7 @@ export interface Project {
     description: string
     image: string
     tags: string[]
+    githubLink?: string
 };
 
 export const projects: Record<string, Project> = {
@@ -37,8 +38,9 @@ export const projects: Record<string, Project> = {
         id: 'nasa',
         title: 'NASA App Development Challenge',
         description: 'An application I made in high school for a nation-wide competition hosted by NASA which my team ended up winning.',
-        image: new URL('../assets/images/rcdx0.png', import.meta.url).href,
-        tags: ['3D', 'Unity Engine', 'C#', 'Python', 'UDP Networking'],
+        image: new URL('../assets/images/nasa0.png', import.meta.url).href,
+        tags: ['3D', 'Unity Engine', 'C#', 'UDP Networking'],
+        githubLink: "https://github.com/jackmj1024/nasa-rcdx"
     },
 };
 

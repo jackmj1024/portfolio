@@ -2,8 +2,9 @@
     NotFound.vue
     The error handler page that displays when the users tries to visit a path that doesn't exist.
 -->
+
 <script setup lang="ts">
-import LinkButton from '../components/generic/LinkButton.vue';
+import RouterButton from '../components/generic/RouterButton.vue';
 </script>
 
 <template>
@@ -20,9 +21,9 @@ import LinkButton from '../components/generic/LinkButton.vue';
                 The page you're looking for does not exist.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-                <LinkButton to="/">
+                <RouterButton to="/">
                     Back to Home
-                </LinkButton>
+                </RouterButton>
             </div>
         </div>
     </div>

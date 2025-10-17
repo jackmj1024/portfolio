@@ -13,9 +13,6 @@ import Text from '../../components/generic/Text.vue';
 
 import Image from '../../components/generic/Image.vue';
 import ImageGrid from '../../components/generic/ImageGrid.vue';
-import img1 from '../../assets/images/apollo1.png';
-import img2 from '../../assets/images/apollo2.png';
-import img3 from '../../assets/images/apollo3.png';
 
 interface ImageItem {
     src: string
@@ -80,7 +77,6 @@ const project: Project = projects.apollo;
         <!-- Development-->
         <section>
             <Subheader title="Development" />
-            <TagDisplay :tags=project.tags />
             <Text>
                 The project was composed of a frontend, a backend, and a MongoDB database. The frontend was written in
                 JavaScript using the React framework and the Material UI component library. while the backend was

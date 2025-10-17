@@ -6,7 +6,7 @@
 <script setup lang="ts">
 
 import Subheader from './Subheader.vue';
-import LinkButton from './LinkButton.vue';
+import RouterButton from './RouterButton.vue';
 import TagDisplay from './TagDisplay.vue';
 
 interface Props {
@@ -41,9 +41,9 @@ defineProps<Props>();
             <TagDisplay :tags="project.tags" />
 
             <!-- Link Button -->
-            <LinkButton :path=project.id>
+            <RouterButton :path=project.id>
                 More Information
-            </LinkButton>
+            </RouterButton>
         </div>
     </div>
 </template>
