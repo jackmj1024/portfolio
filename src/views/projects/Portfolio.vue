@@ -5,20 +5,16 @@
 
 <script setup lang="ts">
 
-import ProjectDetails from '../ProjectDetails.vue';
 import { projects } from '../../data/projects.ts';
+import type { Project } from '../../data/projects.ts';
+
+import ProjectDetails from '../ProjectDetails.vue';
 
 import Subheader from '../../components/generic/Subheader.vue';
 import Text from '../../components/generic/Text.vue';
 import Hyperlink from '../../components/generic/Hyperlink.vue';
 
-interface ImageItem {
-    src: string
-    alt: string
-    description: string
-};
-
-const project: Project = projects.portfolio;
+const project: Project = projects.portfolio!;
 
 </script>
 

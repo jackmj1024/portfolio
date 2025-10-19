@@ -61,7 +61,7 @@ const skill_items: Skill[] = [
                 grid grid-cols-1
                 md:grid-cols-2 md:grid-rows-3 md:grid-flow-col
                 md:auto-rows-max">
-                <div v-for="(item, index) in skill_items" :key="item.name" class="relative">
+                <div v-for="item in skill_items" :key="item.name" class="relative">
                     <!-- Item label (icon and name) -->
                     <dt class="inline-block ml-8 font-bold">
                         <img :src=item.icon alt="" class="absolute size-5

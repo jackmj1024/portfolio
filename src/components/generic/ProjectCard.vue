@@ -5,9 +5,12 @@
 
 <script setup lang="ts">
 
+import type { Project } from '../../data/projects.ts';
+
 import Subheader from './Subheader.vue';
 import RouterButton from './RouterButton.vue';
 import TagDisplay from './TagDisplay.vue';
+
 
 interface Props {
     project: Project

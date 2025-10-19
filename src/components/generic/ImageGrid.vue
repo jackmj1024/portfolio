@@ -8,7 +8,7 @@
 import Text from './Text.vue';
 import Image from './Image.vue';
 
-interface ImageItem {
+export interface ImageItem {
     src: string
     alt: string
     description?: string

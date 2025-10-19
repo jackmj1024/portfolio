@@ -1,9 +1,14 @@
+<!--
+    ProjectSection.vue
+    A set of two panels for displaying featured projects and other projects in a card/grid layout.
+-->
+
 <script setup lang="ts">
 
 import Panel from './generic/Panel.vue';
 import Header from './generic/Header.vue';
 import ProjectGrid from './generic/ProjectGrid.vue';
-import { featured, other } from '../data/projects.ts';
+import { featured } from '../data/projects.ts';
 
 </script>
 

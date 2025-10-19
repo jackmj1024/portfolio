@@ -7,21 +7,16 @@
 
 import ProjectDetails from '../ProjectDetails.vue';
 import { projects } from '../../data/projects.ts';
+import type { Project } from '../../data/projects.ts';
+
+import ImageGrid from '../../components/generic/ImageGrid.vue';
+import type { ImageItem } from '../../components/generic/ImageGrid.vue';
 
 import Subheader from '../../components/generic/Subheader.vue';
 import Text from '../../components/generic/Text.vue';
 import Hyperlink from '../../components/generic/Hyperlink.vue';
 
-import Image from '../../components/generic/Image.vue';
-import ImageGrid from '../../components/generic/ImageGrid.vue';
-
-interface ImageItem {
-    src: string
-    alt: string
-    description: string
-};
-
-const images = [
+const images: ImageItem[] = [
     {
         src: new URL('../../assets/images/nasa1.png', import.meta.url).href,
         alt: "Screenshot: NASA twitter post",
@@ -40,7 +35,7 @@ const images = [
     },
 ];
 
-const project: Project = projects.nasa;
+const project: Project = projects.nasa!;
 
 </script>
 

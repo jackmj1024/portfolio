@@ -7,22 +7,17 @@
 
 import ProjectDetails from '../ProjectDetails.vue';
 import { projects } from '../../data/projects.ts';
+import type { Project } from '../../data/projects.ts';
+
+import ImageGrid from '../../components/generic/ImageGrid.vue';
+import type { ImageItem } from '../../components/generic/ImageGrid.vue';
 
 import Subheader from '../../components/generic/Subheader.vue';
 import Text from '../../components/generic/Text.vue';
 import Hyperlink from '../../components/generic/Hyperlink.vue';
-
-import Image from '../../components/generic/Image.vue';
-import ImageGrid from '../../components/generic/ImageGrid.vue';
 import YouTubeEmbed from '../../components/generic/YouTubeEmbed.vue';
 
-interface ImageItem {
-    src: string
-    alt: string
-    description: string
-};
-
-const images: ImageItem = [
+const images: ImageItem[] = [
     {
         src: new URL('../../assets/images/cthulhuson1.png', import.meta.url).href,
         alt: "Screenshot: graphics",
@@ -48,7 +43,7 @@ const images: ImageItem = [
     },
 ];
 
-const project: Project = projects.cthulhuson;
+const project: Project = projects.cthulhuson!;
 
 </script>
 

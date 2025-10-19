@@ -6,6 +6,7 @@
 <script setup lang="ts">
 
 import ProjectCard from './ProjectCard.vue';
+import type { Project } from '../../data/projects.ts';
 
 interface Props {
     projects: Project[]

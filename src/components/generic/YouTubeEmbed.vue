@@ -10,7 +10,7 @@ interface Props {
     aspectRatio?: '16:9' | '21:9'
 };
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
     aspectRatio: '16:9'
 });
 

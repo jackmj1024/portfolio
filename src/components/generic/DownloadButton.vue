@@ -5,7 +5,6 @@
 <script setup lang="ts">
 
 import Subheader from './Subheader.vue';
-import Text from './Text.vue';
 
 import { ref } from 'vue';
 

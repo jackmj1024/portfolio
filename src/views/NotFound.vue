@@ -21,7 +21,7 @@ import RouterButton from '../components/generic/RouterButton.vue';
                 The page you're looking for does not exist.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-                <RouterButton to="/">
+                <RouterButton path="/">
                     Back to Home
                 </RouterButton>
             </div>

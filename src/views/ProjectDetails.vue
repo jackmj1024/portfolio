@@ -5,6 +5,8 @@
 
 <script setup lang="ts">
 
+import type { Project } from '../data/projects.ts';
+
 import Panel from '../components/generic/Panel.vue';
 import Header from '../components/generic/Header.vue';
 import Image from '../components/generic/Image.vue';

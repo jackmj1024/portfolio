@@ -7,20 +7,15 @@
 
 import ProjectDetails from '../ProjectDetails.vue';
 import { projects } from '../../data/projects.ts';
+import type { Project } from '../../data/projects.ts';
+
+import ImageGrid from '../../components/generic/ImageGrid.vue';
+import type { ImageItem } from '../../components/generic/ImageGrid.vue';
 
 import Subheader from '../../components/generic/Subheader.vue';
 import Text from '../../components/generic/Text.vue';
 
-import Image from '../../components/generic/Image.vue';
-import ImageGrid from '../../components/generic/ImageGrid.vue';
-
-interface ImageItem {
-    src: string
-    alt: string
-    description: string
-};
-
-const images: ImageItem = [
+const images: ImageItem[] = [
     {
         src: new URL('../../assets/images/apollo2.png', import.meta.url).href,
         alt: "Screenshot: discussion window",
@@ -38,7 +33,7 @@ const images: ImageItem = [
     },
 ];
 
-const project: Project = projects.apollo;
+const project: Project = projects.apollo!;
 
 </script>
 

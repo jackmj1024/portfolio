@@ -49,7 +49,7 @@ import portrait from '../assets/images/portrait.webp';
             </div>
 
             <div class="md:row-span-4 md:col-start-2">
-                <Image :src="portrait" :alt="Self - portrait" />
+                <Image :src="portrait" alt="Self portrait" />
             </div>
         </div>
     </Panel>

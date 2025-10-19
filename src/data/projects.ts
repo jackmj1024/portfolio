@@ -54,10 +54,10 @@ export const projects: Record<string, Project> = {
 
 // Categorize featured projects.
 export const featured = [
-    projects.apollo,
-    projects.cthulhuson,
-    projects.portfolio,
-    projects.nasa,
+    projects.apollo!,
+    projects.cthulhuson!,
+    projects.portfolio!,
+    projects.nasa!,
 ];
 
 // Categorize other projects.
