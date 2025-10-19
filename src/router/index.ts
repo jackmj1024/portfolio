@@ -18,7 +18,7 @@ const routes = [
     { path: '/apollo', name: 'apollo', component: Apollo },
     { path: '/nasa', name: 'nasa', component: NASAApp },
     { path: '/cthulhuson', name: 'cthulhuson', component: Cthulhuson },
-    { path: '/portfolio-meta', name: 'portfolio', component: Portfolio },
+    { path: '/portfolio', name: 'portfolio', component: Portfolio },
     { path: '/:catchAll(.*)*', name: '404', component: NotFound },
 ];
 
