@@ -8,6 +8,7 @@
 import Panel from './generic/Panel.vue';
 import Header from './generic/Header.vue';
 import Text from './generic/Text.vue';
+import Hyperlink from './generic/Hyperlink.vue';
 
 import Image from './generic/Image.vue';
 import portrait from '../assets/images/portrait.webp';
@@ -31,12 +32,19 @@ import portrait from '../assets/images/portrait.webp';
                     Hi! My name is Jack, and I'm currently pursuing my Bachelor of Science in Software Engineering at
                     the
                     Milwaukee School of Engineering. This is my last year, so I'll be graduating in May 2026.
-                    <br /> <br />
+                </Text>
+                <Text>
                     As someone who has been programming since middle-school, I've worked on several kinds of
                     projects over the years, including but not limited to web applications, native desktop programs,
                     and video games.
-                    <br /> <br />
-                    This website was created to showcase some of the best of these projects.
+                </Text>
+                <Text>
+                    This website was created to showcase some of the best of my personal projects in more detail than a
+                    traditional resume would allow. If you still would like to see my resume, click
+                    <Hyperlink href="https://u.pcloud.link/publink/show?code=XZp0rn5Z4POTrdrJ4Xu9dE5LSPHqYX5dwsmy">
+                        here
+                    </Hyperlink>
+                    to download it.
                 </Text>
             </div>
 

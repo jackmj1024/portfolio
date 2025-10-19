@@ -87,8 +87,8 @@ const handleSubmit = async (event: Event) => {
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" :disabled="isSubmitting" class="px-4 py-2 roudned-md
-                bg-ctp-lavender text-ctp-base font-medium
+            <button type="submit" :disabled="isSubmitting" class="px-4 py-2 rounded-md
+                bg-ctp-lavender text-ctp-base font-medium cursor-pointer
                 hover:bg-ctp-blue transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
                 {{ isSubmitting ? 'Sending...' : 'Send Message' }}
             </button>
