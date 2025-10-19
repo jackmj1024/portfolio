@@ -12,6 +12,7 @@ import TagDisplay from '../components/generic/TagDisplay.vue';
 
 import RouterButton from '../components/generic/RouterButton.vue';
 import GitHubButton from '../components/generic/GitHubButton.vue';
+import DownloadButton from '../components/generic/DownloadButton.vue';
 
 interface Props {
     project: Project
@@ -31,7 +32,7 @@ defineProps<Props>()
             <TagDisplay :tags="project.tags" />
 
             <!-- Header image -->
-            <div v-if="project.image">
+            <div v-if="project.image" class="mb-4">
                 <Image :src="project.image" :alt="project.title" />
             </div>
 
@@ -50,6 +51,12 @@ defineProps<Props>()
                 <GitHubButton v-if="project.githubLink" :path="project.githubLink">
                     View on GitHub
                 </GitHubButton>
+
+                <!-- Download button -->
+                <DownloadButton v-if="project.windowsLink && project.linuxLink" :windowsLink="project.windowsLink"
+                    :linuxLink="project.linuxLink">
+                    Download Game
+                </DownloadButton>
             </div>
         </Panel>
     </div>

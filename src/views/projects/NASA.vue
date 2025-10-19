@@ -1,6 +1,6 @@
 <!--
     NASA.vue
-    Project detail page for the NASA App Development Challenge
+    Project detail page for the NASA App Development Challenge.
 -->
 
 <script setup lang="ts">

@@ -6,6 +6,7 @@
 <script setup lang="ts">
 
 import Text from './Text.vue';
+import Image from './Image.vue';
 
 interface ImageItem {
     src: string
@@ -20,7 +21,7 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
     columns: 2
-})
+});
 
 </script>
 
@@ -33,12 +34,11 @@ withDefaults(defineProps<Props>(), {
         <div v-for="(image, index) in images" :key="index" :class="[
             'space-y-3',
             images.length % 2 !== 0 && index === images.length - 1 ? 'md:col-span-2' : '']">
-
             <!-- Description above image -->
             <Text v-if="image.description" v-html="image.description" />
 
-            <!-- Image -->
-            <img :src="image.src" :alt="image.alt" class="w-full rounded-lg" />
+            <!-- Image with lightbox -->
+            <Image :src="image.src" :alt="image.alt" />
         </div>
     </div>
 </template>

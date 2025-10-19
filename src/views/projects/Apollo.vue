@@ -1,6 +1,6 @@
 <!--
     Apollo.vue
-    Project detail page for the Apollo Video Learning Platform
+    Project detail page for the Apollo Video Learning Platform.
 -->
 
 <script setup lang="ts">

@@ -22,13 +22,13 @@ defineProps<Props>();
         relative overflow-hidden
         bg-ctp-base rounded-lg 
         border border-ctp-surface2 hover:border-ctp-lavender
-        transition-all duration-200">
+        transition-all duration-400">
 
 
         <!-- Thumbnail -->
         <div class="aspect-video w-full overflow-hidden bg-ctp-surface0">
             <img :src="project.image" :alt="project.title"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" />
         </div>
 
         <!-- Content -->

@@ -8,6 +8,7 @@
 import IntroSection from '../components/IntroSection.vue';
 import SkillSection from '../components/SkillSection.vue';
 import ProjectSection from '../components/ProjectSection.vue';
+import ContactSection from '../components/ContactSection.vue';
 
 </script>
 
@@ -18,5 +19,6 @@ import ProjectSection from '../components/ProjectSection.vue';
         <div id="projects">
             <ProjectSection />
         </div>
+        <ContactSection />
     </div>
 </template>

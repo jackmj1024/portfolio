@@ -10,6 +10,8 @@ export interface Project {
     image: string
     tags: string[]
     githubLink?: string
+    windowsLink?: string
+    linuxLink?: string
 };
 
 export const projects: Record<string, Project> = {
@@ -20,6 +22,7 @@ export const projects: Record<string, Project> = {
         image: new URL('../assets/images/apollo0.png', import.meta.url).href,
         tags: ['Web', 'React', 'JavaScript', 'MongoDB'],
     },
+
     portfolio: {
         id: 'portfolio',
         title: 'Portfolio Website',
@@ -27,17 +30,21 @@ export const projects: Record<string, Project> = {
         image: new URL('../assets/project-placeholder.png', import.meta.url).href,
         tags: ['Web', 'Vue', 'TypeScript', 'Tailwind CSS'],
     },
+
     cthulhuson: {
         id: 'cthulhuson',
         title: 'Call of Cthulhuson',
-        description: 'A first-person adventure game that I created as a submission for a programming event hosted by the MSOE game development club.',
-        image: new URL('../assets/project-placeholder.png', import.meta.url).href,
+        description: 'A 3D adventure game that I created for a programming event hosted by the MSOE game development club.',
+        image: new URL('../assets/images/cthulhuson0.png', import.meta.url).href,
         tags: ['Game', 'Godot Engine', 'C#'],
+        windowsLink: "https://u.pcloud.link/publink/show?code=XZk5in5ZOpGvR6zrLi4oQAt8iXo7GjLbltAV",
+        linuxLink: "https://u.pcloud.link/publink/show?code=XZ05in5ZiFuHVw7rvLzL1HBTWv6kuztF2lNV"
     },
+
     nasa: {
         id: 'nasa',
         title: 'NASA App Development Challenge',
-        description: 'An application I made in high school for a nation-wide competition hosted by NASA which my team ended up winning.',
+        description: 'An application I made in high school for a nation-wide competition by NASA which my team ended up winning.',
         image: new URL('../assets/images/nasa0.png', import.meta.url).href,
         tags: ['3D', 'Unity Engine', 'C#', 'UDP Networking'],
         githubLink: "https://github.com/jackmj1024/nasa-rcdx"
