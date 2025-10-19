@@ -23,7 +23,7 @@ const routes = [
 ];
 
 export const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes,
 
     // Make sure pages open at the correct scroll position.
