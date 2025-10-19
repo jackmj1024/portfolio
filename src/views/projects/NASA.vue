@@ -14,9 +14,6 @@ import Hyperlink from '../../components/generic/Hyperlink.vue';
 
 import Image from '../../components/generic/Image.vue';
 import ImageGrid from '../../components/generic/ImageGrid.vue';
-import img1 from '../../assets/images/apollo1.png';
-import img2 from '../../assets/images/apollo2.png';
-import img3 from '../../assets/images/apollo3.png';
 
 interface ImageItem {
     src: string

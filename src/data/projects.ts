@@ -26,9 +26,10 @@ export const projects: Record<string, Project> = {
     portfolio: {
         id: 'portfolio',
         title: 'Portfolio Website',
-        description: 'The website that you\'re viewing right now! I created it to showcase my work, as well as to learn Tailwind CSS.',
-        image: new URL('../assets/project-placeholder.png', import.meta.url).href,
+        description: 'The website that you\'re viewing right now! I made it to show my work, as well as to learn Vue and Tailwind CSS.',
+        image: new URL('../assets/images/portfolio0.png', import.meta.url).href,
         tags: ['Web', 'Vue', 'TypeScript', 'Tailwind CSS'],
+        githubLink: "https://github.com/jackmj1024/portfolio"
     },
 
     cthulhuson: {
@@ -54,8 +55,8 @@ export const projects: Record<string, Project> = {
 // Categorize featured projects.
 export const featured = [
     projects.apollo,
-    projects.portfolio,
     projects.cthulhuson,
+    projects.portfolio,
     projects.nasa,
 ];
 
