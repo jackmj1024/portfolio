@@ -9,5 +9,9 @@ export default defineConfig({
         tailwindcss()
     ],
 
-    base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/'
+    // For the default github.io domain:
+    //base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/'
+
+    // For the custom domain:
+    base: '/',
 })
