@@ -41,7 +41,7 @@ import portrait from '../assets/images/portrait.webp';
                 <Text>
                     This website was created to showcase some of the best of my personal projects in more detail than a
                     traditional resume would allow. If you still would like to see my resume, click
-                    <Hyperlink href="https://u.pcloud.link/publink/show?code=XZp0rn5Z4POTrdrJ4Xu9dE5LSPHqYX5dwsmy">
+                    <Hyperlink href="https://u.pcloud.link/publink/show?code=XZg4B95ZwUQxoPEleKLCaEhBDuQrg8iff3fy">
                         here
                     </Hyperlink>
                     to download it.
